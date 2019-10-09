@@ -1,0 +1,14 @@
+.ftbg{background: #000; margin-top: 30px; }
+.ftbg>.w95{width: 95%;padding-top: 15px;margin: auto;}
+.ftbg>.w95>.bk4{width: 40%; float: left;}
+.ftbg>.w95>.bk4>.bk7>ul{list-style: none; display: flex;flex-direction: row;}
+.ftbg>.w95>.bk4>.bk7>ul>li{display: flex; width: 20%; overflow: hidden; margin-left: 5%;}
+.ftbg>.w95>.bk4>.bk7{float: left;width: 100%;}
+.ftbg>.w95>.bk4>.bk7>ul>li>a{ margin-right: right 5%; width: 100%; }
+.ftbg>.w95>.bk4>.bk7>ul>li>span{color: #fff;}
+.ftbg .w95::after,.ftbg::after{content: "";display:block;clear: both; }
+.ftbg>.w95>.bk4>.footer-tp{ margin-top: 30px;}
+.ftbg>.w95>.bk5{float: right; color: #fff;}
+.ftbg>.w95>.bk5>img{width:30px;height:30px;vertical-align: middle;} 
+.ftbg>.bk6>span{color:#fff; margin: auto; display: block;
+font-size: 10px;text-align: center;padding-bottom: 20px;margin-top: 20px;}

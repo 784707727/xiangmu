@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: fixed;
+    background: #222;
+    top: 0;left: 0;right: 0;
+    z-index: 100;
+}
+.warp{
+    margin: 0 20px ;
+}
+.header-margin{
+    margin: 15px;
+}
+.flex{
+    display: flex;
+    flex-direction: row
+}
+.yidong{
+    margin-left: 30%;
+}
+.style-ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+.style-ul>li{
+    width: 100px;
+    position: relative;
+    text-align: center;
+    height: 67px;
+    display: inline-block;
+    line-height: 67px;
+}
+a{ color: #fff; text-decoration: none ;display:block; font-size: 14px;}
+.yuyue{
+    width: 60%;
+    padding: 8px 25px;
+    border: red solid 1px;
+    border-radius: 15.5px;
+    text-align: center;
+}
+.gaodu{margin-left: 30px;}
+.headerhid{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    background: #222;
+    transition: all 0.2s linear;
+    top:68px;
+}
+.headerhid2{
+    top:68px;
+    opacity: 0;
+    left: -200px;
+    width:888px;;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    background: #222;
+    transition: all .5s linear; 
+}
+.headerhid3{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    background: #222;
+    transition: all 0.2s linear;
+    top:68px;
+}
+
+ li.a1:hover .headerhid,li.a2:hover .headerhid2 {
+    height: 300px; 
+    opacity:1 ;
+}
+li.a4:hover .headerhid3{
+    height: 150px;
+    opacity: 1;
+}
+li.a1:hover,li.a2:hover,li.a3:hover,li.a4:hover,li.a5:hover,li.a6:hover {
+    border-bottom: #f00 solid 1px;
+    box-shadow: 0 -5px 20px #f00 inset;
+}
+.headerhid a{
+     margin: 5px;
+}
+.linght1{
+    text-align: center;
+    width: 100%;
+    margin: 0px !important;
+    height: 20%;
+    border-bottom: #000 solid 2px;
+}
+.linght2{
+    height: 33.3%;
+    box-sizing:border-box;
+}
+.linght1:hover,.yuyue:hover{
+    background: #f00;
+}
+.w10{width: 10%}
+.w90{width: 90%; border-bottom: #ddd solid 1px; margin: auto;display: flex;box-sizing: border-box;flex-direction: row; margin-top: 30px;
+}
+.cf{text-align: center;line-height: 0px; margin-left: 30px; display: flex;flex-direction: row;justify-content:space-around; width: 90%;}
+.mgtop-10{padding-top: 25px; height: 5px; padding-bottom: 5px;}
+.cf .b1:hover{
+    border-bottom: #f00 solid 1px;
+    box-shadow: 0 -20px 20px -15px #f00 inset;
+    transition: box-shadow .2s linear;
+}
+.w100{width: 100%;}
+@media only screen  and  (max-width:768px){
+    .yidong{display:none;}
+    
+}

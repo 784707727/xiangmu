@@ -1,0 +1,26 @@
+
+*{margin: 0px;padding: 0px;}
+.bgimg{background: url(../images/bg.jpg);}
+.w100{width: 100%;}
+.w80{width: 80%;display: flex;flex-direction: column;margin: auto;}
+.topbg{background: url(../images/brand-bnimg01.jpg);
+background-size: 100% 100%; display: flex;flex-direction: column;}
+.topbg>span{margin-left: 40%;color: #fff;font-size: 3rem;}
+.topbg>span:nth-child(1){padding-top: 50px;}
+.topbg>span:nth-child(2){padding-bottom: 50px;}
+.chexing>p{text-align: center;color: #fff;margin-top: 20px;}
+.chexing>i{width: 3rem;height: 1px;background: #f00;display: block;margin: auto;margin-top:6px; }
+input{background:rgba(255,255,255,0);outline: 0px; border: #aaa solid 0.5px;width: 70%; }
+.chebg{background: url(../images/appointment-bk-01-imgbg02.png) no-repeat;width: 100%;background-size: 100% 100%;padding-bottom: 10px;}
+.chebg>img{width: 100%; opacity: .5;}
+.chebg>img:hover{opacity: 1;}
+.chemo{margin:40px auto;width: 80%;}
+.chemo>ul,.biaodan>ul{list-style: none; display: flex;width: 100%; justify-content: space-between;}
+.chemo>ul>li{width: 24%;overflow: hidden;}
+.chemo>ul>li p{width: 97%; color: #fff;text-align: center;border: #fff solid 1px;margin-top: 5px; font-size: 10px;line-height: 20px;}
+.biaodan{margin:20px auto;}
+.biaodan ul{flex-direction: column; color: #fff;}
+.biaodan>ul>li{justify-content:space-between; display:flex; margin: 10px auto ; overflow: hidden; width: 80%;}
+.biaodan>ul>li>div{width: 40%; display: flex;font-size: 15px; justify-content: space-between; overflow: hidden;}
+select{background: rgba(255,255,255,0);outline: 0px;border: #fff solid 1px; }
+button{width: 10%;margin: auto;}
