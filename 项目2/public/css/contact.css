@@ -1,0 +1,30 @@
+*{margin: 0px;padding: 0px;}
+.bgimg{background: url(../images/bg.jpg);}
+.w100{width: 100%;}
+.topbg{background: url(../images/brand-bnimg01.jpg);background-size: 100% 100%; display: flex;flex-direction: column;margin-bottom: 10px;}
+.topbg>span{margin-left: 30%;color: #fff;font-size: 3rem;}
+.topbg>span:nth-child(1){padding-top: 50px;}
+.topbg>span:nth-child(2){padding-bottom: 50px;}
+.contact{width: 80%;display: flex;margin: auto;justify-content: space-between; margin-top: 2rem;background: #2a2a2a;}
+.contact>div:nth-child(1){width: 40%;background: url("../images/contact-list-img01.jpg")no-repeat;background-size: 100% 100%}
+.contact>div:nth-child(2){width:55%}
+.contact>div>ul{display: flex;flex-direction: column; justify-content:space-between;list-style: none; width: 90%;}
+.contact>div>ul>li{color: #fff;margin: 1rem 0;}
+.contact>div>ul>li>hr{width:30%;height: 1px;background: #f00; border: 0;}
+.contact>div>ul>li:nth-child(1){font-size: 2rem; padding-top: 2rem;}
+.contact>div>ul>li:nth-child(3){font-size: .9rem;}
+.contact>div>ul>li:nth-child(4){display: flex; padding-bottom: 2rem;}
+.contact>div>ul>li:nth-child(4)>div:nth-child(2){display: flex;flex-direction: column;margin-left: 2rem;}
+.img>div:nth-child(1){width: 40%;background: url("../images/contact-list-img02.jpg")no-repeat;background-size: 100% 100%}
+.img3>div:nth-child(1){width: 40%;background: url("../images/contact-list-img03.jpg")no-repeat;background-size: 100% 100%}
+.font-ex{font-size:2rem}
+@media only screen  and  (max-width:768px){
+    .contact{flex-direction: column;}
+    .contact>div:nth-child(1){height: 300px; width: 100%;}
+    .contact>div:nth-child(2){width: 100%;}
+    .contact>div>ul{width: 90%;margin: auto;}
+    .contact>div>ul>li:nth-child(1){font-size: 1.5rem;}
+    .font-ex{font-size: 1rem}
+    
+    
+}

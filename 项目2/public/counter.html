@@ -88,14 +88,17 @@
                      <li>
                        <div>
                        <span>省市：</span> 
-                       <select name="" id="" style="width:70%;">
-                            <option value=""></option>
+                       <select name="provs" id="" style="width:70%;background: #000;color: #fff;" name="provs">
+                            <option>—请选择—</option><!--0-->
+		<option>北京市</option><!--1-->
+		<option>天津市</option>
+		<option>河北省</option>
                         </select>
                     </div>
                     <div>
                        <span >地区：</span>
-                       <select name="" id="" style="width:70%;">
-                            <option value=""></option>
+                       <select name="cities" id="" style="width:70%;background: #000;color: #fff;">
+                        
                         </select>
                     </div> 
                     </li>
@@ -112,5 +115,46 @@
             </div>
         </div>
     </section>
+    <script>
+        var cities=[
+      [{"name":'东城区',"value":101},
+       {"name":'西城区',"value":102},
+       {"name":'海淀区',"value":103},
+       {"name":'朝阳区',"value":104}],
+      [{"name":'河东区',"value":201},
+       {"name":'河西区',"value":202},
+       {"name":'南开区',"value":303}],
+      [{"name":'石家庄市',"value":301},
+       {"name":'廊坊市',"value":302},
+       {"name":'保定市',"value":303},
+       {"name":'唐山市',"value":304},
+       {"name":'秦皇岛市',"value":304}]
+	];
+    var cyte=document.getElementsByName("provs")[0];
+      console.log(cyte);
+      cyte.onchange=function(){
+        var selcit=document.getElementsByName("cities")[0];
+        var i=this.selectedIndex-1;
+       // console.log(i);
+       if(i>=0){
+        var cite=cities[i];
+       // console.log(cite);
+        //创建文档对象
+        var frag=document.createDocumentFragment();
+        var op=document.createElement("option");
+        op.innerHTML="--请选择--";
+        frag.appendChild(op);
+        for(var key of cite){
+          var op=document.createElement("option");
+          //selcit.appendChild(op);
+          op.innerHTML=key.name;
+          frag.appendChild(op);
+        }
+        selcit.innerHTML="";
+        selcit.appendChild(frag);
+        
+      }
+      }
+    </script>
 </body>
 </html>
